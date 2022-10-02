@@ -1,0 +1,347 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body{
+    background: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    padding: 3rem 0 2rem;
+}
+/* Basic */
+h1, h2, h3, h4, h5, h6{
+    line-height: 110%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #020312;
+}
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 32px;
+}
+h3{
+    font-size: 28px;
+}
+h4{
+    font-size: 24px;
+}
+h5{
+    font-size: 20px;
+}
+h6{
+    font-size: 18px;
+}
+/* a{
+    color: #020312;
+} */
+ul{
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    list-style-type: none;
+}
+span{
+    color: red;
+}
+.row{
+    margin-bottom: 30px;
+}
+.row:last-child{
+    margin-bottom: 0;
+}
+.button{
+    background: red;
+    padding: 12px 30px;
+    font-weight: 500px;
+    font-size: 15px;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 22px;
+    border: 2px solid transparent;
+    transition: 0.5s ease-out;
+    display: inline-block;
+}
+.button.room:hover{
+    color: #fff;
+    opacity: 0.8;
+}
+.button.sign-up{
+    background: transparent;
+    border: 2px solid red;
+    color: #222;
+    margin-top: 22px;
+}
+.button.sign-up:hover{
+    border-color: red;
+    color: #fff;
+    background: red;
+    transition: 0.5s ease-out;
+}
+/* navbar */
+.navbar{
+    background: rgb(171, 42, 42);
+    transition: 0.5s ease-out;
+    padding: 15px 0;
+}
+.navbar .navbar-brand img{
+    width: 55px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.navbar .navbar-nav li{
+    padding: 0 10px;
+}
+.navbar .navbar-nav li .nav-link{
+    font-size: 15px;
+    font-weight: 500;
+    color: #020312;
+    transition: all 0.3s ease;
+}
+.navbar .navbar-nav li:hover .nav-link{
+    color: #fff;
+}
+.navbar .navbar-toggler{
+    border-radius: 0;
+    border: 0;
+}
+.navbar .navbar-toggler i{
+    font-size: 28px;
+}
+.navbar .navbar-toggler:focus{
+    outline: 0;
+}
+.navbar.navbar-fixed{
+    background: #fff;
+    transition: 0.5s ease-out;
+}
+
+/* home */
+.home{
+    padding: 175px 0;
+}
+.home h1{
+    font-weight: 600;
+}
+.home .content p{
+    margin-bottom: 30px;
+}
+.home .content-image img{
+    width: 100%;
+}
+.home ul li{
+    display: inline-block;
+}
+.home ul li:last-child{
+    margin-left: 15px;
+}
+
+/* About */
+.about .content-image img{
+    width: 100%;
+    margin-top: 20px;
+}
+.about .content h2{
+    font-weight: 700;
+}
+.about .content h3{
+    font-weight: 600;
+    color: #020312;
+}
+
+/* Movies */
+.movies{
+    max-width: 1920px;
+    padding: 30px;
+    margin: auto;
+    width: 100%;
+}
+.movies .heading h2{
+    padding: 3rem 0 2rem;
+    font-weight: 600;
+}
+.watchlist-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(247px,1fr));
+    gap: 1.5rem;
+    cursor: pointer;  
+}
+.watchlist-card{
+    position: relative;
+    width: 100%;
+    height: 380px;
+}
+.watchlist-card img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.watchlist-title{
+    font-weight: 600;
+}
+.watchlist-text{
+    position: absolute;
+    margin-top: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 30px;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+.watchlist-text h2,
+.watchlist-text span,
+.watchlist-text p{
+    color: #fff;
+}
+.watchlist-text i{
+    float: right;
+    margin-top: -2px;
+    color: orange;
+    font-size: 42px;
+}
+.watchlist-card:hover .watchlist-text{
+    height: 100%;
+}
+/* SERVICES */
+.section-title{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.section-title .title-top{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #020312;
+    letter-spacing: 4px;
+    font-size: 18px;
+}
+.section-title h3{
+    font-size: 36px;
+    font-weight: 800px;
+}
+.content .sub-button{
+    background: transparent;
+    border: 2px solid red;
+    color: #222;
+    margin-top: 22px;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.services .content{
+    text-align: center;
+    padding: 15px;
+    background: #f8f8fc;
+    border: 2px solid red;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+.services .content:hover{
+    background: red;
+}
+.services .content .icon i{
+    color: red;
+}
+.services .content .icon{
+    padding: 5px;
+    border-radius: 15px;
+    position: relative;
+    display: inline-block;
+}
+.services .content:hover i,
+.services .content:hover h5,
+.services .content:hover p,
+.services .content:hover a{
+    color: #fff;
+    text-decoration: none;
+}
+.services .content:hover .sub-button{
+    background: #fff;
+    color: red;
+}
+.services .content i{
+    font-size: 60px;
+    color: #fff;
+}
+.services .content h5{
+    margin-bottom: 10px;
+}
+.services .row{
+    min-height: 20rem;
+}
+
+/* footer */
+footer{
+    background: #020312;
+    padding: 20px 20px 20px;
+}
+footer h5{
+    color: #fff;
+}
+footer .content{
+    font-family: sans-serif;
+}
+.copyright{
+    background: #020312;
+    text-align: center;
+    padding: 35px 0 35px;
+    border-top: 1px solid rgb(91, 91, 91);
+}
+footer ul li{
+    margin-bottom: 8px;
+}
+footer a{
+    color: #f8f8fc;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+}
+footer ul li a{
+    color: #f8f8fc;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    
+}
+footer ul li a i{
+    margin-right: 10px;
+}
+.copyright p{
+    color: #fff;
+    font-weight: 100;
+    margin: 0;
+}
+/*================================================================  RESPONSIVENESS ===============================================================*/
+@media (max-width: 980px){
+    .home .content h2{
+        font-size: 40px;
+    }
+}
+@media (max-width: 000px){
+    
+}
+@media (max-width: 000px){
+    
+}
+@media (max-width: 000px){
+    
+}
+@media (max-width: 000px){
+    
+}
