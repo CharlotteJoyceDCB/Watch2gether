@@ -8,6 +8,14 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: #000000;
+}
+html::-webkit-scrollbar-thumb{
+    background: #E50914;
+    border-radius: 5rem;
+}
 body{
     background: #151516;
     font-size: 16px;
