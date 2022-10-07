@@ -475,6 +475,12 @@ footer ul li a i{
     .watchlist-card{
         height: 290px;
     }
+    #movies{
+        padding: 2rem;
+    }
+    .movies .heading h2{
+        padding-top: 3rem;
+    }
 }
 @media (max-width: 768px){
     .about{
@@ -510,6 +516,12 @@ footer ul li a i{
     }
     .watchlist-card{
         height: 250px;
+    }
+    #movies{
+        padding: 2rem;
+    }
+    .movies .heading h2{
+        padding-top: 3rem;
     }
 }
 @media (max-width: 375px){
@@ -549,5 +561,11 @@ footer ul li a i{
     }
     footer .copyright{
         font-size: 8px;
+    }
+    #movies{
+        padding: 1rem;
+    }
+    .movies .heading h2{
+        padding-top: 3rem;
     }
 }
