@@ -1,5 +1,6 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 *{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -8,7 +9,7 @@
     box-sizing: border-box;
 }
 body{
-    background: #fff;
+    background: #151516;
     font-size: 16px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
@@ -21,7 +22,10 @@ h1, h2, h3, h4, h5, h6{
     line-height: 110%;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    color: #020312;
+    color: #ffffff;
+}
+p{
+    color: #d2d1d1;
 }
 h1{
     font-size: 36px;
@@ -79,7 +83,7 @@ span{
 .button.sign-up{
     background: transparent;
     border: 2px solid red;
-    color: #222;
+    color: #E50914;
     margin-top: 22px;
 }
 .button.sign-up:hover{
@@ -88,11 +92,12 @@ span{
     background: red;
     transition: 0.5s ease-out;
 }
-/* navbar */
+/*============================================================ NAVIGATION BAR ==========================================================*/
 .navbar{
-    background: rgb(171, 42, 42);
+    background:rgba(0, 0, 0, 0.75);
     transition: 0.5s ease-out;
     padding: 15px 0;
+    box-shadow: rgba(0, 0, 0, 0.5);
 }
 .navbar .navbar-brand img{
     width: 160px;
@@ -106,11 +111,12 @@ span{
 .navbar .navbar-nav li .nav-link{
     font-size: 15px;
     font-weight: 500;
-    color: #020312;
+    color: #ffffff;
     transition: all 0.3s ease;
 }
 .navbar .navbar-nav li:hover .nav-link{
-    color: #fff;
+    color: #E50914;
+    background-color: #292929;
 }
 .navbar .navbar-toggler{
     border-radius: 0;
@@ -127,18 +133,41 @@ span{
     transition: 0.5s ease-out;
 }
 
-/* home */
+/*============================================================ HOME SECTION ============================================================*/
 .home{
     padding: 175px 0;
+    position: relative;
+    height: 100%;
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+.home .home-bg{
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -2;
 }
 .home h1{
     font-weight: 600;
 }
+.home h3{
+    font-family: 'Lora', serif;
+    text-align: left;
+}
+.home .content{
+    outline: 2px solid #ffffff;
+}
 .home .content p{
     margin-bottom: 30px;
+    color: #ffffff;
 }
 .home .content-image img{
     width: 100%;
+    outline: 2px solid #020312;
 }
 .home ul li{
     display: inline-block;
@@ -147,28 +176,43 @@ span{
     margin-left: 15px;
 }
 
-/* About */
+/*============================================================ ABOUT SECTION ===========================================================*/
+.about{
+    height: 100vh;
+    width: 100%;
+    background-color: #141414;
+}
+.about .content{
+    margin-top: 7rem;
+}
 .about .content-image img{
     width: 100%;
-    margin-top: 20px;
+    margin-top: 8rem;
 }
 .about .content h2{
     font-weight: 700;
 }
 .about .content h3{
+    text-align: left;
     font-weight: 600;
-    color: #020312;
+    color: #ffffff;
+    margin-top: 3rem;
 }
 
-/* Movies */
-.movies{
+/*============================================================ MOVIES SECTION ==========================================================*/
+#movies{
+    background-color: #151516;
     max-width: 1920px;
     padding: 30px;
     margin: auto;
     width: 100%;
+    position: relative;
+}
+.movies .heading, .search-bar{
+    margin-left: 10px;
 }
 .movies .heading h2{
-    padding: 3rem 0 2rem;
+    padding-top: 3rem;
     font-weight: 600;
 }
 .watchlist-content{
@@ -189,7 +233,7 @@ span{
     border-radius: 30px;
 }
 .watchlist-title{
-    font-weight: 600;
+    font-weight: 500;
 }
 .watchlist-text{
     position: absolute;
@@ -213,26 +257,96 @@ span{
 }
 .watchlist-text i{
     float: right;
-    margin-top: -2px;
+    margin-top: -5px;
+    margin-right: 1px;
     color: orange;
-    font-size: 42px;
+    font-size: 48px;
 }
 .watchlist-card:hover .watchlist-text{
     height: 100%;
 }
-/* SERVICES */
-.section-title{
-    margin-bottom: 50px;
+
+/* Search bar */
+.movies .search-bar{
+    overflow: hidden;
+    max-width: 240px;
+    /* float: right; */
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    column-gap: 0.7rem;
+    padding: 8px 15px;
+    background: #292929;
+    border-radius: 5px;
+    z-index: 2;
+    margin: 0 10px 15px;
+}
+.search-bar .bx{
+    color: #fff;
+}
+.search-bar .bx:active{
+    transform: scale(1.5);
+    color: #E50914;
+}
+.search-bar .bx:hover{
+    cursor: pointer;
+    color: #E50914;
+}
+#search-input{
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: transparent;
+    font-size: 0.938rem;
+}
+/*========================================================== OUTRO SECTION ==========================================================*/
+.parallax{
+    background: url(../images/parallax-bg.jpg) repeat fixed 100%;
+    background-size: cover;
+    
+}
+.parallax-inner{
+    padding-top: 15%;
+    padding-bottom: 15%;
+    background-color:rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 10px 20px black inset;
+}
+.parallax-inner h5, h3{
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.parallax-inner h3{
+    font-weight: 500;
+    font-family: 'Poppins' serif;
+}
+.parallax a{
+    color: #E50914;
+}
+.parallax a:hover{
+    color: #E50914;
+}
+/*========================================================== SERVICES SECTION ==========================================================*/
+.services{
+    height: 100vh;
+    width: 100%;
+    background-color: burlywood;
+}
+.services-title{
+    padding-top: 6rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
-.section-title .title-top{
+.services-title .title-top{
     margin-bottom: 10px;
     text-transform: uppercase;
-    color: #020312;
+    color: #ffffff;
     letter-spacing: 4px;
     font-size: 18px;
 }
-.section-title h3{
+.services-title h3{
     font-size: 36px;
     font-weight: 800px;
 }
@@ -287,21 +401,22 @@ span{
     min-height: 20rem;
 }
 
-/* footer */
+/*=========================================================== FOOTER SECTION ===========================================================*/
 footer{
     background: #020312;
     padding: 20px 20px 20px;
-    font-family: Arial;
 }
 footer h5{
     color: #fff;
 }
+footer .content ul li a{
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
 footer a{
     color: #f8f8fc;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif, sans-serif;
     font-size: 10px;
-    font-weight: inherit;
 }
 .copyright{
     background: #020312;
@@ -314,10 +429,7 @@ footer ul li{
 }
 
 footer ul li a{
-    color: #f8f8fc;
-    text-decoration: none;
-    font-family: 'Arial', sans-serif;
-    
+    color: #717e96;
 }
 footer ul li a i{
     margin-right: 10px;
@@ -330,20 +442,110 @@ footer ul li a i{
 /* Rooms */
 
 /*================================================================  RESPONSIVENESS ===============================================================*/
-@media (max-width: 980px){
+/* 1280
+768
+375 */
+@media (max-width: 1280px){
     .home .content h2{
         font-size: 40px;
     }
+    .about .content-image{
+        visibility: visible;
+    }
+    .about{
+        height: max-content;
+    }
+    .about .content{
+        padding-bottom: 5rem;
+    }
+    .services{
+        height: fit-content;
+    }
+    .services .content{
+        padding-bottom: 1rem;
+    }
+    .services .row{
+        padding-bottom: 3rem;
+    }
+    .watchlist-content{
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    }
+    .watchlist-card{
+        height: 290px;
+    }
 }
-@media (max-width: 000px){
-    
+@media (max-width: 768px){
+    .about{
+        height: fit-content;
+    }
+    .about .content-image{
+        display: none;
+    }
+    .about .content{
+        margin-top: 3rem;
+    }
+    .services-title{
+        padding-top: 5rem;
+    }
+    .services{
+        height: fit-content;
+    }
+    .services .content{
+        margin-bottom: 1rem;
+    }
+    .services .row:last-child{
+        padding-bottom: 3rem;
+    }
+    footer .row .content{
+        font-size: 8px;
+    }
+    footer .copyright{
+        font-size: 8px;
+    }
+    .watchlist-content{
+        grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+        overflow: auto;
+    }
+    .watchlist-card{
+        height: 250px;
+    }
 }
-@media (max-width: 000px){
-    
-}
-@media (max-width: 000px){
-    
-}
-@media (max-width: 000px){
-    
+@media (max-width: 375px){
+    .home{
+        height: 100vh;
+    }
+    .home .content{
+        font-size: 16px;
+    }
+    .about .content-image{
+        display: none;
+    }
+    .about .content{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .services-title{
+        padding-top: 5rem;
+    }
+    .services{
+        height: fit-content;
+    }
+    .services .content{
+        margin-bottom: 1rem;
+    }
+    .services .row:last-child{
+        padding-bottom: 5rem;
+    }
+    .watchlist-content{
+        grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+    }
+    .watchlist-card{
+        height: 190px;
+    }
+    footer .row .content{
+        font-size: 8px;
+    }
+    footer .copyright{
+        font-size: 8px;
+    }
 }

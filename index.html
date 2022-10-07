@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="js/script.js">
     <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="images/CineRoom_Logo.png">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <!--===========================================  NAVBAR  =========================================-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container">
             <a href="#home" class="navbar-brand">
                 <img src="./images/CineRoom_NavLogo.png" alt="NavLogo">
@@ -42,14 +44,15 @@
                         <a href="movies.html#movies" class="nav-link">Movies</a>
                     </li>
                     <li class="nav-item">
-                        <a href="rooms.html#rooms" class="nav-link">Rooms</a>
+                        <a href="#" class="nav-link">Login</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
+    <!--===========================================   HOME   =========================================-->
     <div class="home" id="home">
+        <img src="./images/bg-3.png" class="home-bg" alt="bg">
         <div class="container">
             <div class="row">
                 <div class="col-md-5 col-sm-12 col-xs-12">
@@ -63,21 +66,21 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-5 col-sm-12 col-xs-12">
+                <!-- <div class="col-md-5 col-sm-12 col-xs-12">
                     <div class="content-image">
                         <img src="images/movie-logo.png" alt="">
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
-
+    <!--===========================================   ABOUT  =========================================-->
     <div class="about" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12">
                     <div class="content-image">
-                        <img src="images/features-logo.png" alt="">
+                        <img src="./images/features-logo.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12">
@@ -98,9 +101,19 @@
             </div>
         </div>
     </div>
-
+    <!--=========================================== PARALLAX =========================================-->
+    <div class="outro">
+        <div class="parallax">
+            <div class="parallax-inner">
+                <h3>Can't go to the cinema because of traffic, bad weather, and long queue? </h3>
+                    <h5> <a href="#">Sign Up</a> now and enjoy watching with your friends and 
+                    <br>family without getting interruptions!</h5>
+            </div>
+        </div>
+    </div>
+    <!--=========================================== SERVICES =========================================-->
     <div class="services" id="services">
-        <div class="section-title">
+        <div class="services-title">
             <h5 class="title-top">Subscribe to get exclusive features</h5>
             <h3>Our Packages</h3>
         </div>
@@ -132,7 +145,7 @@
                             <br>-Download up to 50 movies for offline viewing.
                             <br>-1080p video qualty.
                             <br>-Watch on 3 devices
-                            <br>-Invite max of 10 participants in the CineRoom.
+                            <br>-Invite max of 50 participants in the CineRoom.
                         </p>
                         <a class="sub-button" href="#">Subscribe</a>
                     </div>
@@ -147,7 +160,7 @@
                             <br>-Download up to 10 movies for offline viewing.
                             <br>-720p video qualty.
                             <br>-Watch on 1 devices
-                            <br>-Invite max of 6 participants in the CineRoom.
+                            <br>-Invite max of 10 participants in the CineRoom.
                         </p>
                         <a class="sub-button" href="#">Subscribe</a>
                     </div>
@@ -155,19 +168,10 @@
             </div>
         </div>
     </div>
-
+    <!--===========================================  FOOTER  =========================================-->
     <footer>
-        <div class="footer container">
+        <div class="footer container" id="footer">
             <div class="row">
-                <!-- <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="content">
-                        <div class="brand">
-                            <img src="" alt="">
-                        </div>
-                        <p>hjhkl;dskcvn</p>
-                    </div>
-                </div> -->
-
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="content">
                         <h5>About</h5>

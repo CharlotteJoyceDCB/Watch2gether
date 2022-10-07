@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="js/script.js">
     <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <!--===========================================  NAVBAR  =========================================-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container">
             <a href="#home" class="navbar-brand">
-                Cine<span>Room</span>
+                <img src="./images/CineRoom_NavLogo.png" alt="NavLogo">
             </a>
             <button class="navbar-toggler"
             type="button" 
@@ -23,7 +25,7 @@
             data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
-            aria-label="Toggle navigation">
+            aria-label="toggle navigation">
             <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -41,24 +43,30 @@
                         <a href="movies.html#movies" class="nav-link">Movies</a>
                     </li>
                     <li class="nav-item">
-                        <a href="rooms.html#rooms" class="nav-link">Rooms</a>
+                        <a href="#" class="nav-link">Login</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    
-    <section class="movie container" id="movies">
+    <!--===========================================  MOVIES  =========================================-->
+    <section class="movies container" id="movies">
         <div class="heading">
             <h2 class="heading-title">Movies</h2>
         </div>
+        <div class="search-bar">
+            <input type="search" name="" id="search-input" placeholder="Search movies...">
+            <i class="bx bx-search"></i>
+        </div>
+        
+        
             <div class="watchlist-content">
                 <!-- Watchlist List1 -->
                 <div class="watchlist-card">
                     <img src="./images/movies/Interstellar.jpg" alt="watchlist-card-img">
                     <div class="watchlist-text">
                         <a href="#" class="save-btn">
-                            <i class="fas fa-bookmark"></i>
+                            <i class='bx bxs-bookmark-plus'></i>
                         </a>
                         <h2 class="watchlist-title">Interstellar</h2>
                         <span class="genre">Sci-fi/Adventure</span>
@@ -71,7 +79,7 @@
                     <img src="./images/movies/The-Space-Between-Us.jpg" alt="watchlist-card-img">
                     <div class="watchlist-text">
                         <a href="#" class="save-btn">
-                            <i class="fas fa-bookmark"></i>
+                            <i class='bx bxs-bookmark-plus'></i>
                         </a>
                         <h2 class="watchlist-title">The Space Between Us</h2>
                         <span class="genre">Sci-fi/Romance</span>
@@ -84,7 +92,7 @@
                     <img src="./images/movies/El-Angel.jpg" alt="watchlist-card-img">
                     <div class="watchlist-text">
                         <a href="#" class="save-btn">
-                            <i class="fas fa-bookmark"></i>
+                            <i class='bx bxs-bookmark-plus'></i>
                         </a>
                         <h2 class="watchlist-title">El Angel</h2>
                         <span class="genre">Drama/Crime</span>
@@ -97,7 +105,7 @@
                     <img src="./images/movies/The-Curious-Case-of-Benjamin-Button.jpg" alt="watchlist-card-img">
                     <div class="watchlist-text">
                         <a href="#" class="save-btn">
-                            <i class="fas fa-bookmark"></i>
+                            <i class='bx bxs-bookmark-plus'></i>
                         </a>
                         <h2 class="watchlist-title">The Curious Case of Benjamin Button</h2>
                         <span class="genre">Romance/Drama</span>
@@ -110,7 +118,7 @@
                     <img src="./images/movies/Luca.jpg" alt="watchlist-card-img">
                     <div class="watchlist-text">
                         <a href="#" class="save-btn">
-                            <i class="fas fa-bookmark"></i>
+                            <i class='bx bxs-bookmark-plus'></i>
                         </a>
                         <h2 class="watchlist-title">Luca</h2>
                         <span class="genre">Comedy/Fantasy</span>
@@ -123,7 +131,7 @@
                     <img src="./images/movies/Corpse-Bride.jpg" alt="watchlist-card-img">
                     <div class="watchlist-text">
                         <a href="#" class="save-btn">
-                            <i class="fas fa-bookmark"></i>
+                            <i class='bx bxs-bookmark-plus'></i>
                         </a>
                         <h2 class="watchlist-title">Corpse Bride</h2>
                         <span class="genre">Fantasy/Family</span>
@@ -136,7 +144,7 @@
                     <img src="./images/movies/The-Good-Doctor.jpg" alt="watchlist-card-img">
                     <div class="watchlist-text">
                         <a href="#" class="save-btn">
-                            <i class="fas fa-bookmark"></i>
+                            <i class='bx bxs-bookmark-plus'></i>
                         </a>
                         <h2 class="watchlist-title">The Good Doctor</h2>
                         <span class="genre">Medical drama</span>
@@ -149,7 +157,7 @@
                     <img src="./images/movies/Girl-From-Nowhere.jpg" alt="watchlist-card-img">
                     <div class="watchlist-text">
                         <a href="#" class="save-btn">
-                            <i class="fas fa-bookmark"></i>
+                            <i class='bx bxs-bookmark-plus'></i>
                         </a>
                         <h2 class="watchlist-title">Girl From Nowhere</h2>
                         <span class="genre">Drama</span>
@@ -162,7 +170,7 @@
                     <img src="./images/movies/Where-The-Wild-Things-Are.jpg" alt="watchlist-card-img">
                     <div class="watchlist-text">
                         <a href="#" class="save-btn">
-                            <i class="fas fa-bookmark"></i>
+                            <i class='bx bxs-bookmark-plus'></i>
                         </a>
                         <h2 class="watchlist-title">Where The Wild Things Are</h2>
                         <span class="genre">Fantasy</span>
@@ -175,7 +183,7 @@
                     <img src="./images/movies/Night-at-the-Museum-Movie.jpg" alt="watchlist-card-img">
                     <div class="watchlist-text">
                         <a href="#" class="save-btn">
-                            <i class="fas fa-bookmark"></i>
+                            <i class='bx bxs-bookmark-plus'></i>
                         </a>
                         <h2 class="watchlist-title">Night at the Museum Movie</h2>
                         <span class="genre">Fantasy/Comedy</span>
@@ -188,7 +196,7 @@
                     <img src="./images/movies/Peppermint-Candy.jpg" alt="watchlist-card-img">
                     <div class="watchlist-text">
                         <a href="#" class="save-btn">
-                            <i class="fas fa-bookmark"></i>
+                            <i class='bx bxs-bookmark-plus'></i>
                         </a>
                         <h2 class="watchlist-title">Peppermint Candy</h2>
                         <span class="genre">Drama</span>
@@ -201,7 +209,7 @@
                     <img src="./images/movies/Jujutsu-Kaisen-0.jpg" alt="watchlist-card-img">
                     <div class="watchlist-text">
                         <a href="#" class="save-btn">
-                            <i class="fas fa-bookmark"></i>
+                            <i class='bx bxs-bookmark-plus'></i>
                         </a>
                         <h2 class="watchlist-title">Jujutsu Kaisen 0</h2>
                         <span class="genre">Fantasy/Action</span>
