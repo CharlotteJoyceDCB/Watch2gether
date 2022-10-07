@@ -92,6 +92,11 @@ span{
     background: red;
     transition: 0.5s ease-out;
 }
+/* Note: Just copied this code from the internet because of the clear button when adding search input */
+.home-search-bar input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
 /*============================================================ NAVIGATION BAR ==========================================================*/
 .navbar{
     background:#000000;
@@ -212,7 +217,7 @@ span{
 }
 .watchlist-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(247px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     gap: 1.5rem;
     cursor: pointer;  
 }
@@ -464,10 +469,10 @@ footer ul li a i{
         height: fit-content;
     }
     .services .content{
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
     }
-    .services .row{
-        padding-bottom: 3rem;
+    .services .row:last-child{
+        padding-bottom: 5rem;
     }
     .watchlist-content{
         grid-template-columns: repeat(auto-fit, minmax(200px, auto));
@@ -533,6 +538,9 @@ footer ul li a i{
     }
     .about .content-image{
         display: none;
+    }
+    .about{
+        height: 100vh;
     }
     .about .content{
         margin-top: 5rem;
