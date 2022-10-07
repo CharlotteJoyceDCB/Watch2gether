@@ -94,10 +94,9 @@ span{
 }
 /*============================================================ NAVIGATION BAR ==========================================================*/
 .navbar{
-    background:rgba(0, 0, 0, 0.75);
+    background:#000000;
     transition: 0.5s ease-out;
     padding: 15px 0;
-    box-shadow: rgba(0, 0, 0, 0.5);
 }
 .navbar .navbar-brand img{
     width: 160px;
@@ -158,16 +157,12 @@ span{
     font-family: 'Lora', serif;
     text-align: left;
 }
-.home .content{
-    outline: 2px solid #ffffff;
-}
 .home .content p{
     margin-bottom: 30px;
     color: #ffffff;
 }
 .home .content-image img{
     width: 100%;
-    outline: 2px solid #020312;
 }
 .home ul li{
     display: inline-block;
@@ -332,7 +327,7 @@ span{
 .services{
     height: 100vh;
     width: 100%;
-    background-color: burlywood;
+    background-color: #141414;
 }
 .services-title{
     padding-top: 6rem;
@@ -350,6 +345,13 @@ span{
     font-size: 36px;
     font-weight: 800px;
 }
+.services a{
+    cursor: pointer;
+}
+.services .sub-button a:active{
+    transform: scale(1.5);
+    color: #E50914;
+}
 .content .sub-button{
     background: red;
     border: 2px solid red;
@@ -362,7 +364,7 @@ span{
 .services .content{
     text-align: center;
     padding: 15px;
-    background: #f8f8fc;
+    background:#141414;
     border: 2px solid red;
     border-radius: 15px;
     transition: all 0.3s ease;
@@ -403,7 +405,7 @@ span{
 
 /*=========================================================== FOOTER SECTION ===========================================================*/
 footer{
-    background: #020312;
+    background: #000000;
     padding: 20px 20px 20px;
 }
 footer h5{
@@ -419,7 +421,7 @@ footer a{
     font-size: 10px;
 }
 .copyright{
-    background: #020312;
+    background: #000000;
     text-align: center;
     padding: 35px 0 35px;
     border-top: 1px solid rgb(91, 91, 91);
