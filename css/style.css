@@ -515,6 +515,13 @@ footer ul li a i{
     .parallax h5{
         font-size: 11px;
     }
+    .watchlist-content h2{
+        font-size: 24px;
+    }
+    .watchlist-content span,
+    .watchlist-content p{
+        font-size: 12px;
+    }
     .services-title{
         padding-top: 5rem;
     }
@@ -572,6 +579,13 @@ footer ul li a i{
     }
     .parallax h5{
         font-size: 11px;
+    }
+    .watchlist-content h2{
+        font-size: 16px;
+    }
+    .watchlist-content span,
+    .watchlist-content p{
+        font-size: 12px;
     }
     .services{
         height: fit-content;
